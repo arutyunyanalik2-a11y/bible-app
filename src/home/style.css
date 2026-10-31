@@ -1,0 +1,33 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    padding-top: 85px;
+}
+
+
+.saxmosner-div {
+    padding: 10px;
+    background-color: rgb(255, 238, 161);
+    max-width: 100%;
+    width: 92%;
+    margin: 20px auto;
+    font-size: 17px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gold;
+    animation: loading 1s 1;
+}
+
+
+@keyframes loading {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 100px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
