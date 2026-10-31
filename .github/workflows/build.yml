@@ -49,12 +49,9 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - uses: android-actions/setup-android@v3
-
-      - name: Install NDK and platform
+      - name: Use preinstalled Android NDK
         run: |
-          sdkmanager "platforms;android-34" "build-tools;34.0.0" "ndk;27.0.12077973"
-          echo "NDK_HOME=$ANDROID_HOME/ndk/27.0.12077973" >> $GITHUB_ENV
+          echo "NDK_HOME=$ANDROID_NDK_LATEST_HOME" >> $GITHUB_ENV
 
       - uses: actions/setup-node@v4
         with:
